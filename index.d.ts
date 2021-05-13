@@ -124,12 +124,13 @@ declare namespace Pusher {
     rawBody: string
   }
 
-  interface Event {
+  export interface Event {
     name: string
     channel: string
     event: string
     data: string
     socket_id: string
+    user_id?: string
   }
 
   interface WebHookData {
